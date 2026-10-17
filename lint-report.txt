@@ -1,0 +1,48 @@
+12 files left unchanged
+D105 Missing docstring in magic method
+  --> src/victron_energy_meter/models.py:82:9
+   |
+80 |         return self.raw >= (0, major, minor, beta)
+81 |
+82 |     def __lt__(self, other: object) -> bool:
+   |         ^^^^^^
+83 |         if not isinstance(other, FirmwareVersion):
+84 |             return NotImplemented
+   |
+
+D105 Missing docstring in magic method
+  --> src/victron_energy_meter/models.py:87:9
+   |
+85 |         return self.raw < other.raw
+86 |
+87 |     def __str__(self) -> str:
+   |         ^^^^^^^
+88 |         version = f"v{self.raw[1]:x}.{self.raw[2]:02x}"
+89 |         if self.is_beta:
+   |
+
+Found 2 errors.
+D105 Missing docstring in magic method
+  --> src/victron_energy_meter/models.py:82:9
+   |
+80 |         return self.raw >= (0, major, minor, beta)
+81 |
+82 |     def __lt__(self, other: object) -> bool:
+   |         ^^^^^^
+83 |         if not isinstance(other, FirmwareVersion):
+84 |             return NotImplemented
+   |
+
+D105 Missing docstring in magic method
+  --> src/victron_energy_meter/models.py:87:9
+   |
+85 |         return self.raw < other.raw
+86 |
+87 |     def __str__(self) -> str:
+   |         ^^^^^^^
+88 |         version = f"v{self.raw[1]:x}.{self.raw[2]:02x}"
+89 |         if self.is_beta:
+   |
+
+Found 2 errors.
+Success: no issues found in 10 source files
