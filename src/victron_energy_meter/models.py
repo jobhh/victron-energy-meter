@@ -80,11 +80,13 @@ class FirmwareVersion:
         return self.raw >= (0, major, minor, beta)
 
     def __lt__(self, other: object) -> bool:
+        """Order versions by their raw words, so they sort and compare."""
         if not isinstance(other, FirmwareVersion):
             return NotImplemented
         return self.raw < other.raw
 
     def __str__(self) -> str:
+        """The version as Victron writes it, such as ``v1.09``."""
         version = f"v{self.raw[1]:x}.{self.raw[2]:02x}"
         if self.is_beta:
             return f"{version}-beta-{self.raw[3]:02x}"
