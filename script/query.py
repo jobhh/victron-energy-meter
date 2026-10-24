@@ -21,8 +21,8 @@ from modbus_connection.cli_helper import (
     print_component,
 )
 
-from victron_energy_meter import UNIT_ID, VictronEnergyMeter
-from victron_energy_meter.device import ALL
+from victron_energy_meter_modbus import UNIT_ID, VictronEnergyMeter
+from victron_energy_meter_modbus.device import ALL
 
 # The meter speaks Modbus over UDP with the standard MBAP framing.
 CONNECTIONS = (("udp", "socket"),)

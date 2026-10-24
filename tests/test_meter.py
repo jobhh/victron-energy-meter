@@ -6,7 +6,7 @@ import pytest
 from modbus_connection import IllegalDataAddressError, ModbusTimeoutError
 from modbus_connection.mock import MockModbusUnit, ReadEvent
 
-from victron_energy_meter import (
+from victron_energy_meter_modbus import (
     Capability,
     FirmwareVersion,
     PhaseConfiguration,

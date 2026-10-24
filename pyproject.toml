@@ -3,13 +3,13 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "victron-energy-meter"
+name = "victron-energy-meter-modbus"
 version = "0.0.0"
 description = "Read Victron Energy VM-3P75CT and VM-3P5A energy meters over Modbus UDP."
 readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "Apache-2.0" }
-authors = [{ name = "victron-energy-meter contributors" }]
+authors = [{ name = "victron-energy-meter-modbus contributors" }]
 keywords = [
     "modbus",
     "victron",
@@ -28,8 +28,8 @@ classifiers = [
 dependencies = ["modbus-connection[tmodbus]>=4.12.1"]
 
 [project.urls]
-Homepage = "https://github.com/jobhh/victron-energy-meter"
-Issues = "https://github.com/jobhh/victron-energy-meter/issues"
+Homepage = "https://github.com/jobhh/victron-energy-meter-modbus"
+Issues = "https://github.com/jobhh/victron-energy-meter-modbus/issues"
 
 [dependency-groups]
 dev = [
@@ -40,7 +40,7 @@ dev = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/victron_energy_meter"]
+packages = ["src/victron_energy_meter_modbus"]
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"

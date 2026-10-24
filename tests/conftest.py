@@ -11,7 +11,7 @@ from collections.abc import Mapping
 import pytest
 from modbus_connection.mock import MockModbusUnit
 
-from victron_energy_meter import VictronEnergyMeter
+from victron_energy_meter_modbus import VictronEnergyMeter
 
 
 def words(value: int, count: int) -> list[int]:

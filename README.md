@@ -1,4 +1,4 @@
-# victron-energy-meter
+# victron-energy-meter-modbus
 
 Read Victron Energy's own energy meters over Modbus, as typed Python objects.
 
@@ -8,7 +8,7 @@ The library covers the **VM-3P75CT** (current transformers) and the
 `_victron-energy-meter._udp`.
 
 For the Carlo Gavazzi meters Victron also sells (EM540, ET112, ET340, EM24),
-see [carlo-gavazzi-modbus](https://github.com/jobhh/carlo-gavazzi-modbus).
+see [carlo-gavazzi-energy-meter-modbus](https://github.com/jobhh/carlo-gavazzi-energy-meter-modbus).
 
 It is built on
 [modbus-connection](https://github.com/home-assistant-libs/modbus-connection).
@@ -18,7 +18,7 @@ registers through that unit.
 ## Install
 
 ```bash
-pip install victron-energy-meter
+pip install victron-energy-meter-modbus
 ```
 
 ## Example
@@ -29,7 +29,7 @@ import asyncio
 from modbus_connection import ModbusUdpParams
 from modbus_connection.tmodbus import ModbusConnection
 
-from victron_energy_meter import PORT, UNIT_ID, VictronEnergyMeter
+from victron_energy_meter_modbus import PORT, UNIT_ID, VictronEnergyMeter
 
 
 async def main() -> None:

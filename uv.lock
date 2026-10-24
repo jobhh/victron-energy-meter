@@ -429,7 +429,7 @@ wheels = [
 ]
 
 [[package]]
-name = "victron-energy-meter"
+name = "victron-energy-meter-modbus"
 version = "0.0.0"
 source = { editable = "." }
 dependencies = [
